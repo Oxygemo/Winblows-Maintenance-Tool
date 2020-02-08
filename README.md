@@ -10,3 +10,7 @@ It was made by me to do basic maintenace tasks, with no input from the user. A f
 Absolutely not. There exists countless of other tools to clean up temporary files and all of that stuff.
 ## Why?
 Because I was bored
+## How to download?
+clone the repository or use releases if i do make releases (trust me, i probably wont)
+## Help make the tool!
+Got nice commands you want included? Fork the repo, download the bat file, edit it, and upload it to GitHub and make a Pull Request
