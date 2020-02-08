@@ -2,7 +2,7 @@
 First thing that I unironically made in Batch.
 ## Latest Version
 ```
-0.1 Rev1
+0.1 Rev2
 ```
 ## So, what's this for?
 It was made by me to do basic maintenace tasks, with no input from the user. A few button presses might be done. 
