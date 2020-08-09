@@ -6,7 +6,7 @@ echo  / Winblows Maintenace Tool v0.1 alpha \
 echo  / by Odyssey346                       \
 echo  / Enjoy                               \
 echo  / Discord: Odyssey346#9848            \
-echo  / Revision 1.1                        \
+echo  / Revision 1.2                        \
 echo  --------------------------------------
 echo I hope you have remembered to open the tool with Administrative permissions.
 ping 127.0.0.1 >nul
@@ -32,19 +32,15 @@ goto check_Permissions
     color 01
     sfc /scannow
     echo Done. 
+    ping 127.0.0.1 >nul
+    echo Done! We'll repair your Windows Image now.
+    dism /online /cleanup-image /restorehealth
+    echo AAAAAAAAAAAAAAAND done. 
     echo Tool is going to clean up your Temp folder now. Results will not be shown, due to the long list of files being deleted.
-    ping 127.0.0.1 >nul
     del /q/f/s %TEMP%\* >nul
-    cls 
-    echo We have cleaned your Temp folder now. Now it's free of sh*t you dont need!
-    ping 127.0.0.1 >nul 
+    echo We have cleaned your Temp folder now. Now it's free of sh*t you dont need! 
     echo Note: Some things might not have been removed. This is OK, as some apps are currently using it. You can maunally delete them anyway. Some we dont have access to.
-    echo We're going to open up Disk Cleanup. DO NOT SELECT DOWNLOADS. Unselect it if it's selected. It's for your own good.
-    ping 127.0.0.1 >nul
-    cleanmgr
-    echo It has been opened. 
     echo Everything has been checked. If you want the source code, right click the bat file and edit it.
-    ping 127.0.0.1 >nul
     echo Press any key to exit.
     pause >nul
     goto Credits
