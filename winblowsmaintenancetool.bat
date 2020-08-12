@@ -25,6 +25,8 @@ goto check_Permissions
         echo Please see https://oxygemo.github.io/public-screenshots/wasd.png on how to do that.
         echo The program will not proceed. Please press any key to stop.
         echo ///////////////////////////////////////////////////////////////////////////////////
+	pause >nul
+	goto :Escape
     )
 
     pause >nul
@@ -55,3 +57,5 @@ goto check_Permissions
     echo Odyssey346 for the base code
     echo Press any key to exit  the program.
     pause >nul
+:Escape
+	exit
