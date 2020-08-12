@@ -13,15 +13,18 @@ pause >nul
 goto check_Permissions
 
 :check_Permissions
-    echo Administrative permissions required. Detecting permissions...
+    echo Admin permissions required. Detecting permissions...
 
     net session >nul 2>&1
     if %errorLevel% == 0 (
-        echo Success: Administrative permissions confirmed.
+        echo Success: Admin permissions confirmed.
         echo The program will proceed. Press any key.
     ) else (
-        echo Failure: Current permissions aren't Administrative. Restart with Administrative permissions.
-        echo The program will not proceed.
+        echo ///////////////////////////////////////////////////////////////////////////////////
+        echo We don't have admin permissions. Please restart the program with admin permissions. 
+        echo Please see https://oxygemo.github.io/public-screenshots/wasd.png on how to do that.
+        echo The program will not proceed. Please press any key to stop.
+        echo ///////////////////////////////////////////////////////////////////////////////////
     )
 
     pause >nul
