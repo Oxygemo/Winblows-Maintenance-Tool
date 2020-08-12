@@ -1,13 +1,13 @@
 @echo off
 color 1f
 title Winblows Maintenance Tool v0.1 
-echo  --------------------------------------
+echo  ---------------------------------------
 echo  / Winblows Maintenance Tool v0.1 alpha \
 echo  / by Odyssey346                        \
 echo  / Enjoy                                \
 echo  / Discord: Odyssey346#9848             \
 echo  / Revision 1.2                         \
-echo  --------------------------------------
+echo  ---------------------------------------
 echo Press any key to start basic cleanup and fixing! 
 pause >nul 
 goto check_Permissions
