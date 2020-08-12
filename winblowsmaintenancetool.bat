@@ -25,12 +25,8 @@ goto check_Permissions
         echo Please see https://oxygemo.github.io/public-screenshots/wasd.png on how to do that.
         echo The program will not proceed. Please press any key to stop.
         echo ///////////////////////////////////////////////////////////////////////////////////
-	pause >nul
 	goto :Escape
     )
-
-    pause >nul
-
 
 
     echo Doing System File Check. this checks if your windows doesnt have missing files/corrupted system files.
