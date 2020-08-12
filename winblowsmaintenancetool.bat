@@ -6,7 +6,7 @@ echo  / Winblows Maintenance Tool v0.1 alpha \
 echo  / by Odyssey346                        \
 echo  / Enjoy                                \
 echo  / Discord: Odyssey346#9848             \
-echo  / Revision 1.2                         \
+echo  / Revision 1.3                         \
 echo  ---------------------------------------
 echo Press any key to start basic cleanup and fixing! 
 pause >nul 
@@ -49,7 +49,7 @@ goto check_Permissions
 :Credits
     cls
     echo Winblows Maintenace Tool
-    echo Version 0.1 rev1.2 alpha
+    echo Version 0.1 rev1.3 alpha
     echo By Odyssey346
     echo Contributors:
     echo Odyssey346 for the base code
