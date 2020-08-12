@@ -38,7 +38,7 @@ goto check_Permissions
     echo                Done!
     echo /////////////////////////////////////
     echo The temp folder will be cleaned up. However, due to the long list of things being cleaned up, we'll do this in another process.
-    start tempcleaner.bat
+    start "Temp Cleanup Worker Window" cmd /c tempcleanup.bat
     echo Note: Some things might not have been removed. This is OK, as some apps are currently using it. You can maunally delete them anyway. Some we dont have access to.
     echo Everything has been checked. If you want the source code, right click the bat file and edit it.
     echo Press any key to exit.
