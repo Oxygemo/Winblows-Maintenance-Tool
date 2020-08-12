@@ -1,15 +1,15 @@
 @echo off
 color 1f
-title Winblows Maintenace Tool vWho cares about the version number but it's 0.1rev1.1 alpha by Odyssey346
+title Winblows Maintenance Tool v0.1 
 echo  --------------------------------------
-echo  / Winblows Maintenace Tool v0.1 alpha \
-echo  / by Odyssey346                       \
-echo  / Enjoy                               \
-echo  / Discord: Odyssey346#9848            \
-echo  / Revision 1.2                        \
+echo  / Winblows Maintenance Tool v0.1 alpha \
+echo  / by Odyssey346                        \
+echo  / Enjoy                                \
+echo  / Discord: Odyssey346#9848             \
+echo  / Revision 1.2                         \
 echo  --------------------------------------
-echo I hope you have remembered to open the tool with Administrative permissions.
-ping 127.0.0.1 >nul
+echo Press any key to start basic cleanup and fixing! 
+pause >nul 
 goto check_Permissions
 
 :check_Permissions
@@ -33,9 +33,11 @@ goto check_Permissions
     echo Done. 
     echo Done! We'll repair your Windows Image now.
     dism /online /cleanup-image /restorehealth
-    echo AAAAAAAAAAAAAAAND done. 
+    echo /////////////////////////////////////
+    echo                Done!
+    echo /////////////////////////////////////
     echo Tool is going to clean up your Temp folder now. Results will not be shown, due to the long list of files being deleted.
-    del /q/f/s %TEMP%\* >nul
+    del /q/f/s %TEMP%\* 2>NUL
     echo We have cleaned your Temp folder now. Now it's free of sh*t you dont need! 
     echo Note: Some things might not have been removed. This is OK, as some apps are currently using it. You can maunally delete them anyway. Some we dont have access to.
     echo Everything has been checked. If you want the source code, right click the bat file and edit it.
@@ -45,7 +47,7 @@ goto check_Permissions
 :Credits
     cls
     echo Winblows Maintenace Tool
-    echo Version 0.1 rev1.1 alpha
+    echo Version 0.1 rev1.2 alpha
     echo By Odyssey346
     echo Contributors:
     echo Odyssey346 for the base code
