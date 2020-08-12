@@ -31,7 +31,6 @@ goto check_Permissions
     echo Doing System File Check. this checks if your windows doesnt have missing files/corrupted system files.
     sfc /scannow
     echo Done. 
-    ping 127.0.0.1 >nul
     echo Done! We'll repair your Windows Image now.
     dism /online /cleanup-image /restorehealth
     echo AAAAAAAAAAAAAAAND done. 
