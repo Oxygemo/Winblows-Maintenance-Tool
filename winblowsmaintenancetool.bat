@@ -38,8 +38,52 @@ goto check_Permissions
     echo                Done!
     echo /////////////////////////////////////
     echo The temp folder will be cleaned up. However, due to the long list of things being cleaned up, we'll do this in another process.
-    start "Temp Cleanup Worker Window" cmd /c tempcleanup.bat
+    echo //////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+	echo                          TempCleanupWorker For WinblowsMaintenanceTool
+	echo //////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+	del /q/f/s %TEMP%\* 2>NUL
+	echo //////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+	echo                                              Done
+	echo //////////////////////////////////////////////////////////////////////////////////////////////////////////////////
     echo Note: Some things might not have been removed. This is OK, as some apps are currently using it. You can maunally delete them anyway. Some we dont have access to.
+	goto rbinWarning
+:rbinWarning
+	cls
+	color 4f
+	echo																						
+	echo																						
+	echo																						
+	echo																						
+	echo																						
+	echo																						
+	echo							---Warning---
+	echo						We can clean your Recycle Bin.
+	echo			However, you may have things in it that you dont want deleted.
+	echo				So, we're not gonna do it without your confirmation.		
+	echo 			This is a yes or no question. Type (yes) if you are sure you want 	
+	echo				To do this, or (no) if you dont and skip this stage.
+	echo							--------------
+	set /p rbinWarningAnswer="Do you want to clean your recycle bin? (yes/no): "
+	echo																						
+	echo																						
+	echo																						
+	echo																						
+	echo																						
+	echo																						
+	echo																						
+	echo																						
+	echo																						
+	echo																						
+	IF "%rbinWarning%"=="yes" goto :continue_1
+	IF "%rbinWarning%==="no" goto :LeftOff
+:continue_1
+	color 1f
+	erase /s/q/f "C:\$RECYCLE.BIN\*">nul
+	echo /////////////////////////////////////
+    echo                Done!
+    echo /////////////////////////////////////
+	goto :LeftOff
+:LeftOff
     echo Everything has been checked. If you want the source code, right click the bat file and edit it.
     echo Press any key to exit.
     pause >nul
