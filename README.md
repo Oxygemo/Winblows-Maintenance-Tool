@@ -1,5 +1,9 @@
 # Winblows-Maintenance-Tool
 First thing that I unironically made in Batch.
+
+# NOTICE
+Winblows is no longer being maintained, I've created a new project. Check out [Fixdows](https://github.com/Oxygemo/Fixdows)
+
 ## Latest Version
 ```
 0.1 Rev2
